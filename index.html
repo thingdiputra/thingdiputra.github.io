@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Analisis Jalur</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Analisis</span> Jalur
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#tentang">Tentang</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#aplikasi">Aplikasi</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1>Analisis Jalur<br/>(Path Analysis)</h1>
+                        <p class="intro-text" style="font-size: 18px;" >Analisis jalur merupakan perluasan dari analisis regresi berganda. Analisis jalur digunakan jika terdapat variabel mediasi adalah intervening.</p>
+                        <a href="#tentang" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tentang Section -->
+    <section id="tentang" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Tentang Analisis Jalur</h2>
+                <div class="col-lg-6" style="text-align: justify;">
+                    <p style="font-size:16px;">Analisis jalur merupakan perluasan dari analisis regresi berganda. Analisis jalur digunakan jika terdapat variabel mediasi.  Penelitian ini menggunakan teknik analisis jalur. Desain penelitian komparatif dapat di lihat pada Gambar 4.1 dan 4.2.</p>
+                    
+                    <center><img class= "img-responsive" src="img/invert.png" /></center>
+                    
+                    <p style="font-size:16px;">Pada gambar 4.1 variabel X berpengaruh langsung terhadap Y atau sering disebut direct effect, sedangkan gambar 4.2 menggambarkan bentuk mediasi sederhana yaitu ada pengaruh tidak langsung X ke Y, lewat M sebagai variabel mediator. Hubungan sederhana antara X dan Y, lewat M sebagai variabel mediator. Hubungan X dan Y sering disebut total effect (Pengaruh Total) dengan nilai koefisien total c pada gambar 4.1. Koefisien c ini berbeda dengan koefisien c’ , koefisien c’ merupakan koefisien pengaruh langsung (direct effect) X ke Y setelah mengendalikan M (Gambar 4.2).</p>
+
+                    <p style="font-size:16px;">Mendeteksi pengaruh mediasi secara langsung dengan melihat model gambar 4.1. Berdasarkan gambar 4.2 dapat ditulis persamaan regresi sebagai berikut :</p>
+
+                    <p style="font-size:16px; font-style: italic;">
+                        <center>
+                            &#x0176; = &alpha; 1 + c X ......(1)
+                            <br />
+                            &#x0176; = &alpha; 2 + a X ......(2)
+                            <br />
+                            &#x0176; = &alpha; 3 + c' X + b M ......(3)
+                        </center>
+                    </p>
+
+                    <p style="font-size:16px;">Variabel M disebut mediator atau intervening jika persamaan (1) X secara signifikan mempengaruhi Y ( atau c ≠ 0), persamaan (2) X secara signifikan mempengaruhi M ( atau a ≠ 0) dan persamaan (3) X secara signifikan mempengaruhi Y dengan mengkontrol X (b ≠ 0). Jika pengaruh X terhdapa Y menurun menjadi nol dengan memasukan variabel M, maka terjadi mediasi sempurna.</p>
+
+                </div>
+                <div class="col-lg-6" style="text-align: justify;">
+                    <p style="font-size:16px;">Namun demikian, jika pengaruh X terhadap Y menurun tidak sama dengan nol dengan memasukan variabel M, maka terjadi mediasi parsial. Mediasi sederhana ini terjadi jika dipenuhi asumsi (1) tidak ada kesalahan pengukuran pada pada variabel M, dan (2) variabel Y tidak mempengaruhi M. </p>
+                    <p style="font-size:16px;">Pengujian hipotesis mediasi dapat dilakukan dengan prosedur yang dikembangkan oleh sobel (1982) dan dikenal dengan uji sobel (Sobel Test). Uji sobel dilakukan dengan cara menguji kekuatan pengaruh pengaruh tidak langsung X ke Y lewat M. Pengaruh tidak langsung X ke Y lewat M dihitung dengan cara mengalikan jalur X ─  M (a) dengan jalur M─Y (b) atau jalur ab. Jadi koefisien ab = ( c’ – c), dimana c adalah pengaruh X terhadap Y tanpa mengontrol M, sedangkan c’ adalah koefisien pengaruh X terhadap Y setelah mengontrol M. Standar error koefisien a dan b ditulis dengan Sa dan Sb dan besarnya standar error tidak langsung adalah Sab yang dihitung dengan rumus :</p>
+
+                    <img class="img-responsive" src="img/invert2.png" /><br />
+                    
+                    <p style="font-size:16px;">Ket:<br />
+                    Sa = standar error koefisien a<br />
+                    Sb = standar error koefisien b<br />
+                    b = koefisien variabel mediasi<br />
+                    a = koefisien variabel bebas<br /><br />
+                    Untuk menguji signifikan pengaruh tidak langsung, maka kita perlu menghitung nilai t dari koefisien ab dengan rumus :</p>
+
+                    <center>
+                        <img class="img-responsive" src="img/invert3.png" /><br />
+                    </center>
+
+                    <p style="font-size:16px;">Nilai t hitung dibandingkan dengan nilai t tabel. Jika nilai t hitung > nilai t tabel maka disimpulkan terjadi pengaruh mediasi.</p>
+                    
+                    <p style="font-size:16px;"> Sobel test menghendaki asumsi jumlah sampel besar dan nilai koefisien mediasi berdistribusi normal. Tetapi asumsi ini telah banyak dikritik. Menurut Bollen dan Stine (1990) pada sampel kecil distribusinya umumnya tidak normal.</p> 
+
+                    <p style="font-size:16px; float: right;">Imam Gozali (2013: 248-255)</p>
+                </div>
+
+            </div>
+            
+            <a href="#aplikasi" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Aplikasi Section -->
+    <section id="aplikasi" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Aplikasi Web Analisis Jalur</h2>
+                    <p></p>
+                    <a href="aplikasi.html" class="btn btn-default btn-lg">Coba Aplikasi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <h5>Copyright &copy; thingdiputra 2017</h5>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
